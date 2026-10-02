@@ -1,0 +1,81 @@
+.button-sso-wrapper {
+  width: 100%;
+  padding: 12px 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  &.primary {
+    background: #FF6315;
+    box-shadow: 0px 1px 4px 0px #43434340;
+  }
+  &.secondary {
+    background-color: #afafaf;
+    box-shadow: 0px 1px 4px 0px #43434340;
+  }
+  &.danger-no-bg {
+    background-color: transparent;
+    border: 1px sold #ac0d1f;
+    box-shadow: 0px 1px 4px 0px #43434340;
+  }
+  &.danger {
+    background: linear-gradient(
+      180deg,
+      rgba(224, 13, 37, 1) 0%,
+      rgba(149, 10, 25, 1) 100%
+    );
+    box-shadow: 0px 1px 4px 0px #43434340;
+  }
+  &.w-half {
+    width: 50%;
+  }
+  &.w-fit-content {
+    width: fit-content;
+  }
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+/* ===== Click press effect ===== */
+.button-sso-wrapper:active {
+  transform: scale(0.97);
+}
+
+/* ===== Hover ===== */
+.button-sso-wrapper:hover:not(.disabled) {
+  box-shadow: 0 6px 18px rgba(76, 175, 80, 0.25);
+}
+
+/* ===== Disabled ===== */
+.button-sso-wrapper.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===== Loading ===== */
+.button-sso-wrapper.loading {
+  pointer-events: none;
+}
+
+/* ===== Spinner ===== */
+.spinner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* ===== Hide text slightly when loading ===== */
+.button-sso-wrapper.loading .button-content {
+  opacity: 0.7;
+}
+
+/* ===== Keyframes ===== */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

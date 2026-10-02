@@ -1,0 +1,308 @@
+/**
+Config here
+ */
+$sidebar-width: 260px;
+$sidebar-background: #fff;
+$navbar-height: 50px;
+$transition-layout: all 0.3s;
+$transition-layout-time: 0.3s;
+
+// End config
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
+$font-size-base: 0.875rem !default;
+$font-size-lg: 1rem !default;
+$font-size-sm: 0.75rem !default;
+$headings-font-weight: 400 !default;
+
+$spacer: 1rem !default;
+
+$spacers: (
+  0: 0,
+  1: (
+    $spacer * 0.25,
+  ),
+  2: (
+    $spacer * 0.5,
+  ),
+  3: $spacer,
+  4: (
+    $spacer * 1.5,
+  ),
+  5: (
+    $spacer * 3,
+  ),
+  6: (
+    $spacer * 4.5,
+  ),
+  7: (
+    $spacer * 6,
+  ),
+) !default;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+) !default;
+
+$grid-breakpoints-xs: 0 !default;
+$grid-breakpoints-sm: 576px !default;
+$grid-breakpoints-md: 768px !default;
+$grid-breakpoints-lg: 992px !default;
+$grid-breakpoints-xl: 1200px !default;
+$grid-breakpoints-xxl: 1400px !default;
+$grid-breakpoints-xxxl: 1600px !default;
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1440px,
+  xxxl: 1600px,
+) !default;
+
+// Social colors
+$social-colors: (
+  "facebook": #3b5998,
+  "twitter": #1da1f2,
+  "google": #dc4e41,
+  "youtube": #f00,
+  "vimeo": #1ab7ea,
+  "dribbble": #ea4c89,
+  "github": #181717,
+  "instagram": #e4405f,
+  "pinterest": #bd081c,
+  "flickr": #0063dc,
+  "bitbucket": #0052cc,
+) !default;
+
+//color
+$border-color: #dee2e6 !default;
+$text-color: #000000;
+$text-color-2: #333333;
+$white-color: #ffffff;
+$red-color: #cb2131;
+$red-color-2: #ff3b30;
+$main-red: #ac0d1f;
+$blue-color: #0092ff;
+$blue-color: #1a77f2;
+$orange-color: #ed5f0d;
+$orange-color-2: #ff5c00;
+$grey-text-color: #7780a1;
+$background-input-color: #f2f3f6;
+$border-color-button: #d9dde5;
+$border-input-hover-color: #f3542d;
+$gray-color: #ced2d9b2;
+$gray-color-2: #7780a1;
+$gray-color-3: #b2b2b2;
+$gray-color-4: #5f6369;
+$yellow-color: #f5b85d;
+$main-blue: #002868;
+
+.text-h1 {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+.text-h2 {
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 700;
+  color: $white-color;
+}
+
+.text-h3 {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 700;
+  color: $white-color;
+}
+
+.text-lg-regular {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: $white-color;
+}
+
+.text-lg-semibold {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 600;
+  color: $white-color;
+}
+
+.text-md-regular {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: $white-color;
+}
+
+.text-md-semibold {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 600;
+  color: $white-color;
+}
+
+.text-sm-regular {
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 400;
+  color: $white-color;
+}
+
+.text-sm-semibold {
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 600;
+  color: $white-color;
+}
+
+.text-xs-semibold {
+  font-size: 10px;
+  line-height: 150%;
+  font-weight: 600;
+  color: $white-color;
+}
+
+.text-xs-medium {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  color: $white-color;
+}
+
+.text-main-red {
+  color: $main-red;
+}
+
+.text-main-blue {
+  color: $main-blue;
+}
+
+.text-color-2 {
+  color: $text-color-2;
+}
+
+.text-gray-4 {
+  color: $gray-color-4;
+}
+
+.text-orange-color-2 {
+  color: $orange-color-2;
+}
+
+/* ====== INPUT BASE ====== */
+.ant-input,
+.ant-input-affix-wrapper {
+  height: 52px;
+  border-radius: 12px;
+  border: 1px solid #dfe3e8;
+  font-size: 16px;
+}
+
+/* ====== INPUT TEXT ====== */
+.ant-input {
+  padding: 0 16px;
+}
+
+/* ====== PASSWORD WRAPPER ====== */
+.ant-input-affix-wrapper {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* ====== PASSWORD INPUT ====== */
+.ant-input-affix-wrapper .ant-input {
+  padding: 0;
+  height: 100%;
+}
+
+/* ====== PASSWORD ICON ====== */
+.ant-input-password-icon {
+  font-size: 18px;
+  color: #8c8c8c;
+}
+
+/* Hover & Focus */
+.ant-input-affix-wrapper:hover,
+.ant-input:hover {
+  border-color: #4caf50; /* green theme */
+}
+
+.ant-input-affix-wrapper-focused {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.15);
+}
+
+.ck-content {
+  ul {
+    list-style-type: disc !important;
+    padding-left: 40px !important;
+    margin: 1em 0 !important;
+  }
+  ol {
+    list-style-type: decimal !important;
+    padding-left: 40px !important;
+    margin: 1em 0 !important;
+  }
+  li {
+    display: list-item !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+  }
+
+  h1 {
+    font-size: 2em !important;
+  }
+  h2 {
+    font-size: 1.5em !important;
+  }
+  h3 {
+    font-size: 1.17em !important;
+  }
+
+  blockquote {
+    border-left: 5px solid #ccc !important;
+    font-style: italic !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 1.5em !important;
+  }
+
+  a {
+    color: #0092ff !important;
+    text-decoration: underline !important;
+  }
+
+  .ck-editor__editable_inline {
+    min-height: 200px !important;
+  }
+
+  .ck.ck-editor__editable_inline:focus {
+    border-color: #4caf50 !important;
+    box-shadow: none !important;
+  }
+}
